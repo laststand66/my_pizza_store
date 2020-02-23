@@ -7,7 +7,6 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
     <title>{% block title %}My Pizzeria{% endblock %}</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
@@ -18,10 +17,10 @@
           <div class="header_inner">
             <div class="header_logo">My Pizza</div>
             <nav class="nav">
-              <a class="nav_link" href="{% url 'homepage:login' %}">Login</a>
-              <a class="nav_link" href="#">About</a>
-              <a class="nav_link" href="#">About</a>
-              <a class="nav_link" href="#">About</a>
+              <a class="nav_link" style="text-decoration: none" href="{% url 'homepage:login' %}">Login</a>
+              <a class="nav_link" style="text-decoration: none" href="{% url 'homepage:menu' %}">Menu</a>
+              <a class="nav_link" style="text-decoration: none" href="#">About</a>
+              <a class="nav_link" style="text-decoration: none" href="#">About</a>
 
             </nav>
           </div>
@@ -32,13 +31,15 @@
 
         </div>
     </header>
+
+
+
+
+
+
     <div class="intro">
       <div class="container">
       </div>
-
-
-
-
     </div>
 
   </body>

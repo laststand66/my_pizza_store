@@ -9,4 +9,5 @@ app_name = 'homepage'
 urlpatterns = [
     path('', get_homepage),
     path('accounts/login/', MainLogin.as_view(), name='login'),
+    path('menu/', menu_list, name='menu'),
 ]

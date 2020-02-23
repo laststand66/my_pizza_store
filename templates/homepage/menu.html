@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+
+
+
+{% block tile %}Меню{% endblock %}
+
+{% block content %}
+<div class="row text-center">
+  {% for pizza in pizzas %}
+  <div class="col-sm-4">
+    <div class="thumbnail">
+      <img src="paris.jpg" alt="Paris">
+      <p><strong>{{ pizza.title }}</strong></p>
+      <p>{{ pizza.body }}</p>
+      <button class="btn">Заказать</button>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}
